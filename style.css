@@ -69,6 +69,9 @@ nav ul {
 nav ul li {
     margin-right: 20px;
     margin-left: 5px;
+    vertical-align: middle; /* Alinea verticalmente con el botón */
+    display: flex; /* Utiliza flexbox para alinear verticalmente los elementos <li> */
+    align-items: center; /* Centra verticalmente los elementos <li> */
 }
 
 /* Estilos para la imagen del icono en el menú de navegación */
@@ -115,6 +118,7 @@ a:hover {
     font-weight: bold;
     text-decoration: none;
     font-family: inherit; 
+    vertical-align: middle; /* Alinea verticalmente con el botón */
     
   }
   
