@@ -4,35 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6242ef6b23.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styleContactame.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Amigu-arte</title>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <img src="./imagenes/logos/e7c4c1b765fed27981a73e87f1a71f1b-removebg.png" alt="">
-            <li class="items-nav">
-                <a href="index.html">Inicio</a>
-            </li>
-            <li class="items-nav">
-                <a href="Conoceme.html">Conoceme</a>
-            </li>
-            <li>
-                <div class="dropdown">
-                    <button class="dropbtn">Mis amigurumis</button>
-                    <div class="dropdown-content">
-                        <a href="ParaHogar.html">Para el hogar</a>
-                        <a href="ParaJugar.html">Para jugar</a>
-                        <a href="ParaBelleza.html">Para mi belleza</a>
-                        <a href="ParaRegalar.html">Para regalar</a>
-                    </div>
-                </div>
-            </li>
-            <li class="items-nav">
-                <a href="Contactame.html">Contactame</a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <img src="./imagenes/logos/e7c4c1b765fed27981a73e87f1a71f1b-removebg.png" alt="Bootstrap" width="30"
+                        height="24">
+                    <li class="nav-item">
+                        <a class="nav-link active items-nav" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link items-nav" href="Conoceme.html">Conoceme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link items-nav" href="Contactame.html">Contactame</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle dropbtn" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Mis amigurumis
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a class="dropdown-item" href="ParaHogar.html">Para el hogar</a></li>
+                            <li><a class="dropdown-item" href="ParaJugar.html">Para jugar</a></li>
+                            <li><a class="dropdown-item" href="ParaBelleza.html">Para mi belleza</a></li>
+                            <li><a class="dropdown-item" href="ParaRegalar.html">Para regalar</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
     <h1 class="titulos-pequeños">¡Hablemos de tejido!</h1>
     <p>
@@ -41,13 +49,10 @@
         colaborar contigo en proyectos especiales.
     </p>
     <div class="image-container">
-        <img src="./imagenes/logos/concepto-estancia-casa-rutina-diurna-chica-que-trabaja-casa-gato_564312-213-removebg-preview.png" alt="" class="imagen-controlada">>
+        <img src="./imagenes/logos/concepto-estancia-casa-rutina-diurna-chica-que-trabaja-casa-gato_564312-213-removebg-preview.png"
+            alt="" class="imagen-controlada">>
     </div>
-    <h2>Contacto: </h2>
-    <ul>
-        <li>Correo electrónico: amiguarte@email.com</li>
-        <li>Teléfono: +54 3573-123456</li>
-    </ul>
+
     <p>
         Ya sea que quieras explorar patrones, aprender nuevas técnicas o simplemente charlar sobre tejido, estoy aquí
         para ayudarte. ¡No dudes en ponerte en contacto conmigo! Estoy emocionada de compartir mi amor por el crochet
@@ -57,9 +62,55 @@
         Recuerda que cada pieza tejida tiene su propia historia que contar, y juntos podemos crear algo verdaderamente
         especial. ¡Espero escucharte pronto y comenzar nuestra aventura en el mundo del tejido!
     </p>
+
+    <h2>Contacto </h2>
+    <form class="formulario" action="https://formspree.io/f/xvojdjze" method="post">
+
+        <label for="Nombre_del_Usuario">Nombre:
+            <input type="text" name="Nombre_del_Usuario" id="Nombre_del_Usuario" required>
+        </label>
+
+        <label for="Apellido_del_Usuario">Apellido:
+            <input type="text" name="Apellido_del_Usuario" id="Apellido_del_Usuario" required>
+        </label>
+
+        <label for="Email">Email:
+            <input type="email" name="Email" id="Email" placeholder="example@gmail.com" required>
+        </label>
+
+        <label for="Pais_de_Origen">País de origen:
+            <input type="text" name="Pais_de_Origen" id="Pais_de_Origen" required>
+        </label>
+
+        <label for="comentarios">Ingrese un comentario:
+            <textarea name="comentarioUsuario" id="comentarios" maxlength="400" minlength="20"
+                placeholder="Ingrese un comentario"></textarea>
+        </label>
+
+        <input type="submit" value="Enviar" id="enviar">
+    </form>
+    
     <footer>
         <div class="container">
-            <p>&copy; 2023 Amigu-arte</p>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/">
+                        <i class="fa-brands fa-instagram" style="color: #050505;"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/">
+                        <i class="fa-brands fa-facebook" style="color: #000000;"></i>
+                    </a>
+                </li>
+            </ul>
+            <p>
+                Imagenes obtenidas personalmente
+                <!-- sino agregar link -->
+            </p>
+            <p>
+                &copy; 2023 Amigu-arte
+            </p>
         </div>
     </footer>
 </body>

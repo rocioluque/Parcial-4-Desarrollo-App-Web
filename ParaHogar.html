@@ -4,35 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6242ef6b23.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styleAmig.css">
     <title>Amigu-arte</title>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <img src="./imagenes/logos/e7c4c1b765fed27981a73e87f1a71f1b-removebg.png" alt="">
-            <li class="items-nav">
-                <a href="index.html">Inicio</a>
-            </li>
-            <li class="items-nav">
-                <a href="Conoceme.html">Conoceme</a>
-            </li>
-            <li>
-                <div class="dropdown">
-                    <button class="dropbtn">Mis amigurumis</button>
-                    <div class="dropdown-content">
-                        <a href="ParaHogar.html">Para el hogar</a>
-                        <a href="ParaJugar.html">Para jugar</a>
-                        <a href="ParaBelleza.html">Para mi belleza</a>
-                        <a href="ParaRegalar.html">Para regalar</a>
-                    </div>
-                </div>
-            </li>
-            <li class="items-nav">
-                <a href="Contactame.html">Contactame</a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <img src="./imagenes/logos/e7c4c1b765fed27981a73e87f1a71f1b-removebg.png" alt="Bootstrap" width="30"
+                        height="24">
+                    <li class="nav-item">
+                        <a class="nav-link active items-nav" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link items-nav" href="Conoceme.html">Conoceme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link items-nav" href="Contactame.html">Contactame</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle dropbtn" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Mis amigurumis
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a class="dropdown-item" href="ParaHogar.html">Para el hogar</a></li>
+                            <li><a class="dropdown-item" href="ParaJugar.html">Para jugar</a></li>
+                            <li><a class="dropdown-item" href="ParaBelleza.html">Para mi belleza</a></li>
+                            <li><a class="dropdown-item" href="ParaRegalar.html">Para regalar</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
     <h1 class="titulos-pequeños">Para el hogar</h1>
     <ul class="lista-productos">
@@ -64,7 +72,25 @@
     </ul>
     <footer>
         <div class="container">
-            <p>&copy; 2023 Amigu-arte</p>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/">
+                        <i class="fa-brands fa-instagram" style="color: #050505;"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/">
+                        <i class="fa-brands fa-facebook" style="color: #000000;"></i>
+                    </a>
+                </li>
+            </ul>
+            <p>
+                Imagenes obtenidas personalmente
+                <!-- sino agregar link -->
+            </p>
+            <p>
+                &copy; 2023 Amigu-arte
+            </p>
         </div>
     </footer>
 </body>
