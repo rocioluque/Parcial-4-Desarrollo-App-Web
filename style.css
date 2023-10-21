@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;500&display=swap');
 :root {
   --color-rosa-pastel: #f7d5d5;
   --color-celeste-h1: #519fbe;
@@ -43,7 +44,6 @@ body {
 
 h1 {
   background-position: 50%;
-  background-attachment: local;
   margin: 0px;
   padding: 0px;
   text-align: center;
@@ -51,13 +51,14 @@ h1 {
   text-transform: uppercase;
   color: var(--color-blanco);
   text-shadow: 4px 4px var(--color-celeste-h1);
-  font-family: cursive;
+  font-family: 'Playpen Sans', cursive;
 }
 
 .titulos-pequeños {
   font-size: 40px;
   color: var(--color-blanco);
   text-shadow: 4px 4px var(--color-celeste-h1);
+  
 }
 
 /* Navegación */
@@ -65,7 +66,7 @@ nav {
   background-color: var(--color-celeste-pastel);
   align-items: center;
   display: flex;
-
+  font-family: 'Playpen Sans', cursive;
 }
 
 nav ul {
@@ -90,8 +91,7 @@ nav img {
 }
 
 /* Estilos para los elementos de la lista del menú de navegación */
-nav .items-nav {
-  font-weight: bold;
+nav .nav-item{
   font-size: 18px;
   color: var(--color-gris-oscuro);
   text-decoration: none;
@@ -120,44 +120,43 @@ a:hover {
 }
 
 /* Estilos para el botón del dropdown */
-.dropbtn {
+.dropdown-toggle {
   background-color: var(--color-celeste-pastel);
   color: var(--color-gris-oscuro);
   border: none;
   cursor: pointer;
   font-size: 18px;
   border-radius: 5px;
-  font-weight: bold;
   display: flex;
   align-items: center;
 }
 
 /* Estilos para el contenido del dropdown */
-.dropdown-content {
+.dropdown-menu {
   display: none;
   position: absolute;
   background-color: var(--color-blanco);
-  min-width: 149px;
+  min-width: 175px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
 }
 
 /* Estilos para los items del dropdown */
-.dropdown-content a {
+.dropdown-menu a {
   display: block;
   padding: 10px;
   text-decoration: none;
   color: var(--color-gris-oscuro);
   margin-right: 5px;
+  
 }
 
 /* Cambia el color del item al pasar el mouse por encima */
-.dropdown-content a:hover {
+.dropdown-menu a:hover {
   background-color: #ddd;
 }
 
 /* Mostrar el contenido del dropdown al pasar el mouse por encima del contenedor */
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-menu {
   display: block;
 }
 
@@ -213,7 +212,7 @@ footer {
   color: var(--color-gris-oscuro);
   padding: 20px 0;
   text-align: center;
-  font-family: inherit;
+  font-family: 'Playpen Sans', cursive;
 }
 
 /* Estilos para el contenido dentro del footer */
@@ -226,6 +225,6 @@ footer {
 footer p {
   margin: 0;
   font-size: 18px;
-  font-family: inherit;
+  font-family: 'Playpen Sans', cursive;
   margin-top: 5px;
 }
