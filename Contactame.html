@@ -15,8 +15,9 @@
 <body>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="./imagenes/logos/e7c4c1b765fed27981a73e87f1a71f1b-removebg.png" alt="Bootstrap" width="30"
-                height="24">
+            <a class="navbar-brand" href="index.html"><img
+                    src="./imagenes/logos/e7c4c1b765fed27981a73e87f1a71f1b-removebg.png" alt="Bootstrap" width="30"
+                    height="24">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +32,7 @@
                         <a class="nav-link active" href="Contactame.html">Contactame</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Mis amigurumis
                         </a>
@@ -47,53 +48,61 @@
         </div>
     </nav>
     <h1 class="titulos-pequeños">¡Hablemos de tejido!</h1>
-    <p>
-        ¿Te gustaría hablar de tejido, explorar nuevas ideas y hacer amigurumis? ¡Estoy aquí
-        para ti! Como apasionada tejedora de crochet, me encantaría escuchar tus ideas, responder a tus preguntas o
-        colaborar contigo en proyectos especiales.
-    </p>
-    <div class="image-container">
-        <img src="./imagenes/logos/concepto-estancia-casa-rutina-diurna-chica-que-trabaja-casa-gato_564312-213-removebg-preview.png"
-            alt="" class="imagen-controlada">>
-    </div>
+    <main>
+        <section>
+            <p>
+                ¿Te gustaría hablar de tejido, explorar nuevas ideas y hacer amigurumis? ¡Estoy aquí
+                para ti! Como apasionada tejedora de crochet, me encantaría escuchar tus ideas, responder a tus
+                preguntas o
+                colaborar contigo en proyectos especiales.
+            </p>
+            <div class="image-container">
+                <img src="./imagenes/logos/concepto-estancia-casa-rutina-diurna-chica-que-trabaja-casa-gato_564312-213-removebg-preview.png"
+                    alt="" class="imagen-controlada">
+            </div>
 
-    <p>
-        Ya sea que quieras explorar patrones, aprender nuevas técnicas o simplemente charlar sobre tejido, estoy aquí
-        para ayudarte. ¡No dudes en ponerte en contacto conmigo! Estoy emocionada de compartir mi amor por el crochet
-        contigo y de convertir tus ideas en hermosas creaciones tejidas a mano.
-    </p>
-    <p>
-        Recuerda que cada pieza tejida tiene su propia historia que contar, y juntos podemos crear algo verdaderamente
-        especial. ¡Espero escucharte pronto y comenzar nuestra aventura en el mundo del tejido!
-    </p>
+            <p>
+                Ya sea que quieras explorar patrones, aprender nuevas técnicas o simplemente charlar sobre tejido, estoy
+                aquí
+                para ayudarte. ¡No dudes en ponerte en contacto conmigo! Estoy emocionada de compartir mi amor por el
+                crochet
+                contigo y de convertir tus ideas en hermosas creaciones tejidas a mano.
+            </p>
+            <p>
+                Recuerda que cada pieza tejida tiene su propia historia que contar, y juntos podemos crear algo
+                verdaderamente
+                especial. ¡Espero escucharte pronto y comenzar nuestra aventura en el mundo del tejido!
+            </p>
+        </section>
+        <h2>Contacto </h2>
+        <section>
+            <form class="formulario" action="https://formspree.io/f/xvojdjze" method="post">
 
-    <h2>Contacto </h2>
-    <form class="formulario" action="https://formspree.io/f/xvojdjze" method="post">
+                <label for="Nombre_del_Usuario">Nombre:
+                    <input type="text" name="Nombre_del_Usuario" id="Nombre_del_Usuario" required>
+                </label>
 
-        <label for="Nombre_del_Usuario">Nombre:
-            <input type="text" name="Nombre_del_Usuario" id="Nombre_del_Usuario" required>
-        </label>
+                <label for="Apellido_del_Usuario">Apellido:
+                    <input type="text" name="Apellido_del_Usuario" id="Apellido_del_Usuario" required>
+                </label>
 
-        <label for="Apellido_del_Usuario">Apellido:
-            <input type="text" name="Apellido_del_Usuario" id="Apellido_del_Usuario" required>
-        </label>
+                <label for="Email">Email:
+                    <input type="email" name="Email" id="Email" placeholder="example@gmail.com" required>
+                </label>
 
-        <label for="Email">Email:
-            <input type="email" name="Email" id="Email" placeholder="example@gmail.com" required>
-        </label>
+                <label for="Pais_de_Origen">País de origen:
+                    <input type="text" name="Pais_de_Origen" id="Pais_de_Origen" required>
+                </label>
 
-        <label for="Pais_de_Origen">País de origen:
-            <input type="text" name="Pais_de_Origen" id="Pais_de_Origen" required>
-        </label>
+                <label for="comentarios">Ingrese un comentario:
+                    <textarea name="comentarioUsuario" id="comentarios" maxlength="400" minlength="20"
+                        placeholder="Ingrese un comentario"></textarea>
+                </label>
 
-        <label for="comentarios">Ingrese un comentario:
-            <textarea name="comentarioUsuario" id="comentarios" maxlength="400" minlength="20"
-                placeholder="Ingrese un comentario"></textarea>
-        </label>
-
-        <input type="submit" value="Enviar" id="enviar">
-    </form>
-    
+                <input type="submit" value="Enviar" id="enviar">
+            </form>
+        </section>
+    </main>
     <footer>
         <div class="container">
             <ul>
@@ -110,7 +119,6 @@
             </ul>
             <p>
                 Imagenes obtenidas personalmente
-                <!-- sino agregar link -->
             </p>
             <p>
                 &copy; 2023 Amigu-arte
@@ -118,8 +126,9 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
