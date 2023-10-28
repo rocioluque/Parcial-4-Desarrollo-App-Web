@@ -6,7 +6,6 @@
   --color-blanco: #ffffff;
   --color-gris-oscuro: #333;
   --color-gris-claro: #ddd;
-   
 }
 
 /* Estilos generales */
@@ -64,7 +63,6 @@ h1 {
 /* Navegación */
 nav {
   background-color: var(--color-celeste-pastel);
-  align-items: center;
   display: flex;
   font-family: 'Playpen Sans', cursive;
 }
@@ -73,7 +71,6 @@ nav ul {
   list-style: none;
   padding: 0px;
   display: flex;
-  align-items: center;
 }
 
 nav ul li {
@@ -81,7 +78,6 @@ nav ul li {
   margin-left: 5px;
   vertical-align: middle;
   display: flex;
-  align-items: center;
 }
 
 /* Estilos para la imagen del icono en el menú de navegación */
@@ -174,7 +170,7 @@ p {
 
 /* Estilos para elementos h2 */
 h2 {
-  font-size: 24px;
+  font-size: 25px;
   color: var(--color-gris-oscuro);
   margin-top: 20px;
   margin-bottom: 10px;

@@ -4,9 +4,15 @@
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
+.lista-hogar{
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 40px;
+}
 
 /* Estilos para cada producto */
 .producto {
