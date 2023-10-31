@@ -20,6 +20,7 @@ body {
 .image-container {
   text-align: center;
   margin-top: -40px;
+  position: relative;
 }
 
 .image-container img {
@@ -33,11 +34,6 @@ body {
 /* Estilos para la imagen controlada */
 .imagen-controlada {
   width: 300px;
-  height: auto;
-}
-
-.logo-controlado {
-  width: 430px;
   height: auto;
 }
 
@@ -223,4 +219,12 @@ footer p {
   font-size: 18px;
   font-family: 'Playpen Sans', cursive;
   margin-top: 5px;
+}
+
+.transformado{
+  transition: transform 5s;
+}
+
+.img-transformado:active{
+  transform: rotate(360deg);
 }
